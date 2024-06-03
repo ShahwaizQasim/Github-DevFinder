@@ -16,12 +16,12 @@
   <body>
     <div class="main">
       <!-- Input -->
-        <form class="myInput">
+        <form class="myInput" id="myForm">
         <div class="inputIcon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
           <div class="input">
-          <input type="text" placeholder="Github UserName..." required />
+          <input type="text" placeholder="Github UserName..." id="GithubUser" required />
         </div>
           <div class="inputButton">
             <button class="btn1" type="submit">Search</button>
@@ -35,9 +35,10 @@
           <img src="" id="UserImage" height="50px" />
         </div>
         <div class="user-data-show">
-        <h2 id="UserName"></h2>
-        <h4 id="UserBio"></h4>
-        <h4 id="UserCity"></h4>
+          <h2 id="GithubName"></h2>
+          <h4 id="UserName"></h4>
+          <h4 id="UserBio"></h4>
+          <h4 id="UserCity"></h4>
         </div>
         <button type="submit"></button>
       </div>

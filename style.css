@@ -9,6 +9,8 @@
     --font-family: "Space Mono", monospace;
     --color:#666;
     --color2:#0079FF;
+    --color3: #fff;
+    --color4: #000;
 }
 
 /* main div  */
@@ -28,7 +30,7 @@
     height: 60px;
     width: 45%;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--color3);
     display: flex;
 }
 .inputIcon{
@@ -74,7 +76,7 @@ input::placeholder{
     border: none;
     font-family: var(--font-family);
     border-radius: 5px;
-    color: white;
+    color: var(--color3);
     font-weight: 700;
 }
 
@@ -82,8 +84,8 @@ input::placeholder{
 .box{
     height: 400px;
     width: 45%;
-    background-color: black;
-    color: white;
+    background-color: var(--color3);
+    color: var(--color4);
     border-radius: 10px;
     display: grid;
     grid-template-areas: "sdbr main main main";
@@ -97,10 +99,22 @@ input::placeholder{
     position: relative;
     top: 20px;
     left: 20px;
+    overflow: hidden;
+}
+.user-image > img{
+    height: 100%;
+    width: 100%;
 }
 .user-data-show{
     height: 400px;
-    width: auto;
-    border:2px solid red;
+    width: 550px;
+    border: 2px solid red;
     grid-area: main;
+    margin-left: 40px;
+
+}
+#UserName{
+    padding-top: 30px !important;
+    font-family: var(--font-family);
+    font-weight: 700;
 }
