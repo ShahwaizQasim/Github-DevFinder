@@ -113,8 +113,41 @@ input::placeholder{
     margin-left: 40px;
 
 }
-#UserName{
-    padding-top: 30px !important;
+.parent{
+    height: auto;
+    display: flex;
+    border: 2px solid black;
+}
+.githubName{
+    height: auto;
+    width: 60%;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.githubName > h2{
     font-family: var(--font-family);
+}
+#UserName{
     font-weight: 700;
+    font-family: var(--font-family);
+    color: var(--color2);
+    font-weight: 500;
+}
+.githubJoin{
+    height: 100px;
+    width: 40%;
+    border: 2px solid red;
+}
+#UserBio{
+    font-family: var(--font-family);
+    color: var(--color);
+    font-weight: 500;
+}
+
+.parent2{
+    height: 100px;
+    width: 250px;
+    border: 2px solid red;
 }
