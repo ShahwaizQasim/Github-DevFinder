@@ -16,7 +16,6 @@
 /* main div  */
 .main{
     height: 100vh;
-    border: 2px solid red;
     background-color: var(--background-color);
     display: flex;
     justify-content: center;
@@ -27,14 +26,14 @@
 
 /* Input design  */
 .myInput{
-    height: 60px;
+    height: auto;
     width: 45%;
     border-radius: 10px;
     background-color: var(--color3);
     display: flex;
 }
 .inputIcon{
-    height: 55px;
+    height: auto;
     width: 70px;
 }
 .inputIcon > i{
@@ -45,14 +44,17 @@
    color: var(--color2);
 }
 .input{
-    height: 60px;
+    height: auto;
     width: 500px;
 }
 input{
-    width: 65%;
+    height: auto;
+    width: 85%;
     outline: none;
     font-size: 1.2rem;
     padding-top: 12px;
+    padding-bottom: 13px;
+    background-color: transparent;
     color: var(--color);
     font-family: var(--font-family);
     border: none;
@@ -60,9 +62,13 @@ input{
 input::placeholder{
     color: var(--color);
     font-family: var(--font-family);
+    background-color: transparent;
+}
+input:focus{
+    border: 1px solid #fff;
 }
 .inputButton{
-    height: 60px;
+    height: auto;
     width: 140px;
     display: flex;
     justify-content: center;
@@ -79,23 +85,32 @@ input::placeholder{
     color: var(--color3);
     font-weight: 700;
 }
+.inputButton > .btn1:active{
+    border: 3px solid darkblue;
+}
 
 /* user data show  */
 .box{
-    height: 400px;
+    height: auto;
     width: 45%;
     background-color: var(--color3);
     color: var(--color4);
     border-radius: 10px;
     display: grid;
-    grid-template-areas: "sdbr main main main";
+    grid-template-areas: "sidebar main main main";
+    border: 2px solid red;
+}
+.sidebar{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
 }
 .user-image{
     height: 120px;
     width: 120px;
     border-radius: 100%;
-    grid-area: sdbr;
-    border: 2px solid red;
+    grid-area: sidebar;
+    border: 2px solid var(--color);
     position: relative;
     top: 20px;
     left: 20px;
@@ -106,8 +121,8 @@ input::placeholder{
     width: 100%;
 }
 .user-data-show{
-    height: 400px;
-    width: 550px;
+    height: auto;
+    width: 92%;
     border: 2px solid red;
     grid-area: main;
     margin-left: 40px;
@@ -140,14 +155,125 @@ input::placeholder{
     width: 40%;
     border: 2px solid red;
 }
+#GithubJoin{
+    font-family: var(--font-family);
+    color: var(--color);
+    font-weight: 500;
+    position: relative;
+    top: 35px;
+}
+.userBio{
+    height: 80px;
+    border: 2px solid red;
+}
 #UserBio{
     font-family: var(--font-family);
     color: var(--color);
     font-weight: 500;
+    padding-right: 25px;
 }
-
 .parent2{
-    height: 100px;
-    width: 250px;
+    height: auto;
+    width: 80%;
     border: 2px solid red;
+    background-color:var(--background-color) ;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+}
+.Repo{
+    height: auto;
+    width: 30%;
+    padding-bottom: 20px;
+}
+.Repo > h4{
+    font-family: var(--font-family);
+    text-align: center;
+    padding-top: 20px;
+    color: var(--color);
+    font-weight: 600;
+}
+#repo{
+    padding-top: 5px !important;
+    color: var(--color);
+    font-weight: 500;
+}
+.Followers{
+    height: auto;
+    width: 30%;
+    padding-bottom: 20px;
+    color: var(--color);
+    font-weight: 600;
+}
+.Followers > h4{
+    font-family: var(--font-family);
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+}
+#followers{
+    padding-top: 5px !important;
+    color: var(--color);
+    font-weight: 500;
+}
+.Following{
+    height: auto;
+    width: 30%;
+    padding-bottom: 20px; 
+}
+.Following > h4{
+    font-family: var(--font-family);
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    color: var(--color);
+}
+#following{
+    padding-top: 5px !important;
+    color: var(--color);
+    font-weight: 500;
+}
+.location{
+    height: 60px;
+    border: 1px solid green;
+    margin-top: 20px;
+    position: relative;
+}
+.location > i {
+    font-size: 1.4rem;
+    color: var(--color);
+    position: relative;
+    top: 15px;
+    left: 10px; 
+}
+.location > h4 {
+    font-family: var(--font-family);
+    position: absolute;
+    left: 40px;
+    top: 13px;
+    color: var(--color);
+    font-weight: 500;
+}
+.User-Github-URl{
+    height: 70px;
+    border: 2px solid red;
+    position: relative;
+}
+.User-Github-URl > i {
+    font-size: 1.4rem;
+    color: var(--color);
+    position: relative;
+    top: 15px;
+    left: 10px; 
+}
+.User-Github-URl > h4 {
+    font-family: var(--font-family);
+    position: absolute;
+    left: 50px;
+    top: 13px;
+    color: var(--color);
+    font-weight: 500;
 }

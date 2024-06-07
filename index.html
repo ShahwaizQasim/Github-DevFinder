@@ -16,43 +16,67 @@
   <body>
     <div class="main">
       <!-- Input -->
-        <form class="myInput" id="myForm">
+      <form class="myInput" id="myForm">
         <div class="inputIcon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-          <div class="input">
-          <input type="text" placeholder="Github UserName..." id="GithubUser" required />
+        <div class="input">
+          <input
+            type="text"
+            placeholder="Github UserName..."
+            id="GithubUser"
+            required
+          />
         </div>
-          <div class="inputButton">
-            <button class="btn1" type="submit">Search</button>
-          </div>
-        </form>
+        <div class="inputButton">
+          <button class="btn1" type="submit">Search</button>
+        </div>
+      </form>
 
       <!-- user Data show -->
 
       <div class="box">
-        <div class="user-image">
-          <img src="" id="UserImage" height="50px" />
+        <div class="sidebar">
+          <div class="user-image">
+            <img src="" id="UserImage" height="50px" />
+          </div>
         </div>
         <div class="user-data-show">
-         <div class="parent">
+          <div class="parent">
             <div class="githubName">
-               <h2 id="GithubName"></h2>
-               <h4 id="UserName"></h4>
+              <h2 id="GithubName"></h2>
+              <h4 id="UserName"></h4>
             </div>
             <div class="githubJoin">
-               <h2 id="GithubJoin"></h2>
+              <h4 id="GithubJoin"></h4>
             </div>
-        </div>
-          <h4 id="UserBio"></h4>
-
-          <div class="parent2">
-            <div class="Repo"></div>
-            <div class="Followers"></div>
-            <div class="Following"></div>
+          </div>
+          <div class="userBio">
+            <h4 id="UserBio"></h4>
           </div>
 
-          <h4 id="UserCity"></h4>
+          <div class="parent2">
+            <div class="Repo">
+              <h4>Repos</h4>
+              <h4 id="repo"></h4>
+            </div>
+            <div class="Followers">
+              <h4>Followers</h4>
+              <h4 id="followers"></h4>
+            </div>
+            <div class="Following">
+              <h4>Following</h4>
+              <h4 id="following"></h4>
+            </div>
+          </div>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4 id="UserCity"></h4>
+          </div>
+          <div class="User-Github-URl">
+            <i class="fa-solid fa-link"></i>
+            <h4 id="Github-URl"></h4>
+          </div>
         </div>
         <button type="submit"></button>
       </div>
