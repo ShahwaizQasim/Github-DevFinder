@@ -25,6 +25,8 @@ userCity.innerText = 'San Francisco, US'
 User_Github_Url.innerText = 'github.com/octocat'
 
 const formController = async (event) => {
+
+try{
 event.preventDefault(); // is se page refresh nhi hota
 
 const GithubUserInput = UserInput.value;
@@ -41,7 +43,7 @@ User_Github_Url.innerText = 'loading...';
 
 const api1 = await fetch(`https://api.github.com/users/${GithubUserInput}`);
 const response = await api1.json(); // api ko object me convert kiya hai
-// console.log(response);
+console.log(response);
 
 //api se data ko show kiya hai
 GithubImage.src = response.avatar_url;
@@ -70,10 +72,15 @@ User_Github_Url.innerText = response.html_url
 
 GithubJoin.innerText = `Joined ${theDate}`;
 GithubForm.reset(); // is se input khali ho jaega
-
+}catch(error){
+   swal({
+      icon:"error",
+      title: "Error",
+      text: error?.response?.message || "User Not Found",
+   });
+}
 
 }
 // formController();
 
 GithubForm.addEventListener("submit", formController);
-
