@@ -1,6 +1,9 @@
 const GithubForm = document.querySelector("#myForm");
 const UserInput = document.querySelector("#GithubUser");
-const GithubImage = document.querySelector("#UserImage");
+
+/* api se data ko show krwan keliye kuch element ko select kiya hai */
+const GithubImage = document.querySelector("#UserImage1");
+const GithubImage2 = document.querySelector("#UserImage2"); 
 const GithubName = document.querySelector("#GithubName");
 const GithubUserName = document.querySelector("#UserName");
 const GithubJoin = document.querySelector("#GithubJoin");
@@ -11,20 +14,44 @@ const User_Followers = document.querySelector("#followers");
 const User_Following = document.querySelector("#following");
 const User_Github_Url = document.querySelector("#Github-URl");
 
+
+GithubName.innerText = `The Octocat`; 
+GithubUserName.innerText = `@octocat`;
+UserBio.innerText = `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.`;
+User_Repository.innerText = `47`;
+User_Followers.innerText = '3938';
+User_Following.innerText = '23';
+userCity.innerText = 'San Francisco, US'
+User_Github_Url.innerText = 'github.com/octocat'
+
 const formController = async (event) => {
-event.preventDefault();
+event.preventDefault(); // is se page refresh nhi hota
 
 const GithubUserInput = UserInput.value;
 // console.log(GithubUserInput);
+GithubImage2.style.display = 'none'; 
+GithubName.innerText = 'loading...'; 
+GithubUserName.innerText = 'loading...';
+UserBio.innerText = 'No Bio';
+User_Repository.innerText = 'loading...';
+User_Followers.innerText = '';
+User_Following.innerText = '';
+userCity.innerText = 'loading...';
+User_Github_Url.innerText = 'loading...';
 
 const api1 = await fetch(`https://api.github.com/users/${GithubUserInput}`);
-const response = await api1.json();
-console.log(response);
+const response = await api1.json(); // api ko object me convert kiya hai
+// console.log(response);
 
+//api se data ko show kiya hai
 GithubImage.src = response.avatar_url;
 GithubName.innerText = response.name;
 GithubUserName.innerText = `@${response.login}`;
-UserBio.innerText = response.bio;
+if (response.bio) { // agr user ne github me bio nahi dala hoa tw else chalega 
+  UserBio.innerText = response.bio;
+}else{
+  UserBio.innerText = "No Bio";
+}
 User_Repository.innerText = response.public_repos;
 User_Followers.innerText = response.followers;
 User_Following.innerText = response.following;
@@ -42,6 +69,7 @@ User_Github_Url.innerText = response.html_url
   // console.log(theDate);
 
 GithubJoin.innerText = `Joined ${theDate}`;
+GithubForm.reset(); // is se input khali ho jaega
 
 
 }
