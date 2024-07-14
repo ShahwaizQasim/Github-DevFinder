@@ -102,3 +102,19 @@ GithubForm.reset(); // is se input khali ho jaega
 // formController();
 
 GithubForm.addEventListener("submit", formController);
+
+/* darkMode and Light mode */
+const mainBody = document.querySelector(".main");
+const theme_btn = document.querySelector("#btn2");
+let isDarkMode = true;
+
+theme_btn.addEventListener("click", () => {
+  if (isDarkMode === true) {
+     mainBody.className = "dark"
+     theme_btn.innerHTML = "Light <i class='fa-solid fa-sun'></i>";
+  }else{
+     mainBody.className = "main"
+     theme_btn.innerHTML = "Dark <i class='fa-solid fa-moon'></i>";
+  }
+  isDarkMode = !isDarkMode;
+})

@@ -12,6 +12,9 @@
     --color3: #fff;
     --color4: #000;
 }
+.dark{
+     height: 100vh;
+}
 
 /* main div  */
 .main{
@@ -22,6 +25,41 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    border: 2px solid red;
+}
+
+.parent{
+    height: 50px;
+    width: 730px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.img > h5{
+    font-size: 1.5rem;
+    font-family: var(--font-family);
+    color: var(--color2);
+}
+.img > h5 >span{
+    color: black;
+}
+.button > button{
+    height: 35px;
+    min-width: 120px;
+    width: 130px;
+    outline: none;
+    border: none;
+    font-family: var(--font-family);
+    border-radius: 5px;
+    color: var(--color4);
+    font-size: 1.2rem;
+    font-weight: normal;
+    cursor: pointer;
+    margin-top: 3px;
+    background-color: transparent;
+}
+.button > button >i{
+    font-weight: normal;
 }
 
 /* Input design  */
