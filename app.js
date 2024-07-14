@@ -3,6 +3,7 @@ const UserInput = document.querySelector("#GithubUser");
 
 /* api se data ko show krwan keliye kuch element ko select kiya hai */
 const GithubImage = document.querySelector("#UserImage1");
+console.log(GithubImage);
 const GithubImage2 = document.querySelector("#UserImage2"); 
 const GithubName = document.querySelector("#GithubName");
 const GithubUserName = document.querySelector("#UserName");
@@ -24,13 +25,15 @@ User_Following.innerText = '23';
 userCity.innerText = 'San Francisco, US'
 User_Github_Url.innerText = 'github.com/octocat'
 
+
 const formController = async (event) => {
 
 try{
 event.preventDefault(); // is se page refresh nhi hota
 
 const GithubUserInput = UserInput.value;
-// console.log(GithubUserInput);
+
+
 GithubImage2.style.display = 'none'; 
 GithubName.innerText = 'loading...'; 
 GithubUserName.innerText = 'loading...';
@@ -58,6 +61,11 @@ User_Repository.innerText = response.public_repos;
 User_Followers.innerText = response.followers;
 User_Following.innerText = response.following;
 userCity.innerText = response.location;
+if (response.location) {
+  userCity.innerText = response.location
+}else{
+  userCity.innerText = 'No Location';
+}
 User_Github_Url.innerText = response.html_url
 
 // User_Joined_Github Date
@@ -73,11 +81,21 @@ User_Github_Url.innerText = response.html_url
 GithubJoin.innerText = `Joined ${theDate}`;
 GithubForm.reset(); // is se input khali ho jaega
 }catch(error){
+   GithubImage2.src = GithubImage.src;
+   GithubName.innerText = `The Octocat`; 
+   GithubUserName.innerText = `@octocat`;
+   UserBio.innerText = `Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.`;
+   User_Repository.innerText = `47`;
+   User_Followers.innerText = '3938';
+   User_Following.innerText = '23';
+   userCity.innerText = 'San Francisco, US'
+   User_Github_Url.innerText = 'github.com/octocat'
    swal({
       icon:"error",
       title: "Error",
-      text: error?.response?.message || "User Not Found",
+      text: error?.response?.message || "User Not Found and please Enter your correct username",
    });
+   GithubForm.reset();
 }
 
 }

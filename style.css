@@ -84,6 +84,7 @@ input:focus{
     border-radius: 5px;
     color: var(--color3);
     font-weight: 700;
+    cursor: pointer;
 }
 .inputButton > .btn1:active{
     border: 3px solid darkblue;
@@ -106,8 +107,8 @@ input:focus{
     background-color: #fff;
 }
 .user-image{
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
     border-radius: 100%;
     grid-area: sidebar;
     border: 2px solid var(--color);
@@ -163,7 +164,7 @@ input:focus{
     top: 35px;
 }
 .userBio{
-    height: 80px;
+    min-height: 80px;
     border: 2px solid red;
 }
 #UserBio{
