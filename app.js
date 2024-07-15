@@ -76,10 +76,12 @@ User_Github_Url.innerText = response.html_url
    let month = monthStr[monthName];
   // console.log(month);
    let theDate = `${date.slice(8,10)} ${month} ${date.slice(0,4)}`;
+   console.log(theDate);
   // console.log(theDate);
 
-GithubJoin.innerText = `Joined ${theDate}`;
-GithubForm.reset(); // is se input khali ho jaega
+  GithubJoin.innerText = `Joined ${theDate}`;
+  GithubForm.reset(); // is se input khali ho jaega
+
 }catch(error){
    GithubImage2.src = GithubImage.src;
    GithubName.innerText = `The Octocat`; 
@@ -114,6 +116,8 @@ const input = document.querySelector(".input1");
 const userBox = document.querySelector(".box");
 const sidebar = document.querySelector(".sidebar");
 const repository = document.querySelector(".parent2");
+const githubName = document.querySelector(".githubName2");
+const githubName2 = document.querySelector(".githubName3");
 let isDarkMode = true;
 
 theme_btn.addEventListener("click", () => {
@@ -126,7 +130,10 @@ theme_btn.addEventListener("click", () => {
      userBox.className = "boxDark";
      input.className = 'input1Dark';
      sidebar.className = 'sidebarDark';
-     repository.className = 'parent2Dark'
+     repository.className = 'parent2Dark';
+     githubName.className = 'githubName2Dark';
+     githubName2.className = 'githubName3Dark';
+     GithubJoin.className = 'githubJoin1Dark'
   }else{
      mainBody.className = "main"
      h5Span.className = 'span'
@@ -136,9 +143,10 @@ theme_btn.addEventListener("click", () => {
      userBox.className = "box";
      input.className = "input1";
      sidebar.className = 'sidebar';
-     repository.className = 'parent2'
-
-
+     repository.className = 'parent2';
+     githubName.className = 'githubName2';
+     githubName2.className = 'githubName3';
+     GithubJoin.className = 'githubJoin1'
   }
   isDarkMode = !isDarkMode;
 })

@@ -203,7 +203,7 @@
     border-radius: 10px;
     display: grid;
     grid-template-areas: "sidebar main main main";
-    border: 2px solid red;
+    border: 5px solid red;
 }
 /* dark  */
 .boxDark{
@@ -218,23 +218,23 @@
 }
 /* light  */
 .sidebar{
-    height: 100%;
+    height: auto;
     width: 100%;
     background-color: #fff;
     border: 2px solid red;
+    grid-area: sidebar;
 }
 /* dark  */
 .sidebarDark{
-    height: 100%;
+    height: auto;
     width: 100%;
+    grid-area: sidebar;
     background-color: var(--dark-color2); 
-    padding-bottom: 10px !important;
 }
 .user-image{
     height: 140px;
     width: 140px;
     border-radius: 100%;
-    grid-area: sidebar;
     border: 2px solid var(--color);
     position: relative;
     top: 20px;
@@ -261,24 +261,43 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    padding-top: 20px;
 }
-.githubName > h2{
+.githubName > .githubName2{
     font-family: var(--font-family);
+    color: #000;
 }
-#UserName{
-    font-weight: 700;
+.githubName > .githubName2Dark{
     font-family: var(--font-family);
-    color: var(--color2);
-    font-weight: 500;
+    color: var(--color3);
+}
+.githubName > .githubName3{
+    font-family: var(--font-family);
+    color: #000;
+    position: relative;
+    left: 4px;
+}
+.githubName > .githubName3Dark{
+    font-family: var(--font-family);
+    color: var(--color3);
+    position: relative;
+    left: 4px;
 }
 .githubJoin{
     height: 100px;
     width: 40%;
+    border: 2px solid red;
 }
-#GithubJoin{
+.githubJoin1{
     font-family: var(--font-family);
     color: var(--color);
+    font-weight: 500;
+    position: relative;
+    top: 35px;
+}
+.githubJoin1Dark{
+    font-family: var(--font-family);
+    color: var(--color3);
     font-weight: 500;
     position: relative;
     top: 35px;
