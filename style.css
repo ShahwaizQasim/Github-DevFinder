@@ -11,12 +11,23 @@
     --color2:#0079FF;
     --color3: #fff;
     --color4: #000;
+    --dark-color:#141D2F;
+    --dark-color2:#1E2A47;
 }
-.dark{
-     height: 100vh;
+/* dark  */
+.mainDark{
+    height: 100vh;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid red;
 }
 
 /* main div  */
+/* light  */
 .main{
     height: 100vh;
     background-color: var(--background-color);
@@ -40,10 +51,17 @@
     font-family: var(--font-family);
     color: var(--color2);
 }
-.img > h5 >span{
-    color: black;
+/* light  */
+.img > h5 >.span{
+    color: var(--color4);
 }
-.button > button{
+/* dark  */
+.img > h5 > .spanDark{
+    color: var(--color3);
+}
+
+/* light  */
+.button > .btn2{
     height: 35px;
     min-width: 120px;
     width: 130px;
@@ -58,16 +76,42 @@
     margin-top: 3px;
     background-color: transparent;
 }
-.button > button >i{
+.button > .btn2 >i{
     font-weight: normal;
+}
+/* dark  */
+.button > .btn2Dark{
+    height: 35px;
+    min-width: 120px;
+    width: 130px;
+    outline: none;
+    border: none;
+    font-family: var(--font-family);
+    border-radius: 5px;
+    color: var(--color3);
+    font-size: 1.2rem;
+    font-weight: normal;
+    cursor: pointer;
+    margin-top: 3px;
+    background-color: transparent;
 }
 
 /* Input design  */
+/* light  */
 .myInput{
     height: auto;
     width: 45%;
     border-radius: 10px;
     background-color: var(--color3);
+    display: flex;
+    border: 2px solid black;
+}
+/* dark  */
+.myInputDark {
+    height: auto;
+    width: 45%;
+    border-radius: 10px;
+    background-color: var(--dark-color2);
     display: flex;
 }
 .inputIcon{
@@ -85,7 +129,9 @@
     height: auto;
     width: 500px;
 }
-input{
+
+/* light  */
+.input1{
     height: auto;
     width: 85%;
     outline: none;
@@ -97,12 +143,31 @@ input{
     font-family: var(--font-family);
     border: none;
 }
-input::placeholder{
+.input1::placeholder{
     color: var(--color);
     font-family: var(--font-family);
     background-color: transparent;
 }
-input:focus{
+
+/* dark  */
+.input1Dark{
+    height: auto;
+    width: 85%;
+    outline: none;
+    font-size: 1.2rem;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    background-color: transparent;
+    color: var(--color3);
+    font-family: var(--font-family);
+    border: none;
+}
+.input1Dark::placeholder{
+    color: var(--color3);
+    font-family: var(--font-family);
+    background-color: transparent;
+}
+.input1:focus{
     border: 1px solid #fff;
 }
 .inputButton{
@@ -129,6 +194,7 @@ input:focus{
 }
 
 /* user data show  */
+/* light  */
 .box{
     height: auto;
     width: 45%;
@@ -139,10 +205,30 @@ input:focus{
     grid-template-areas: "sidebar main main main";
     border: 2px solid red;
 }
-.sidebar{
+/* dark  */
+.boxDark{
     height: auto;
+    width: 45%;
+    background-color: var(--dark-color2);
+    color: var(--color4);
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: "sidebar main main main";
+    border: 2px solid red;
+}
+/* light  */
+.sidebar{
+    height: 100%;
     width: 100%;
     background-color: #fff;
+    border: 2px solid red;
+}
+/* dark  */
+.sidebarDark{
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-color2); 
+    padding-bottom: 10px !important;
 }
 .user-image{
     height: 140px;
@@ -162,20 +248,17 @@ input:focus{
 .user-data-show{
     height: auto;
     width: 92%;
-    border: 2px solid red;
     grid-area: main;
-    margin-left: 40px;
+    margin-left: 35px;
 
 }
 .parent1{
     height: auto;
     display: flex;
-    border: 2px solid black;
 }
 .githubName{
     height: auto;
     width: 60%;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
@@ -192,7 +275,6 @@ input:focus{
 .githubJoin{
     height: 100px;
     width: 40%;
-    border: 2px solid red;
 }
 #GithubJoin{
     font-family: var(--font-family);
@@ -203,7 +285,6 @@ input:focus{
 }
 .userBio{
     min-height: 80px;
-    border: 2px solid red;
 }
 #UserBio{
     font-family: var(--font-family);
@@ -214,8 +295,18 @@ input:focus{
 .parent2{
     height: auto;
     width: 80%;
-    border: 2px solid red;
     background-color:var(--background-color) ;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+}
+.parent2Dark{
+    height: auto;
+    width: 80%;
+    background-color:var(--dark-color2) ;
     position: relative;
     top: 10px;
     left: 15px;
@@ -277,7 +368,6 @@ input:focus{
 }
 .location{
     height: 60px;
-    border: 1px solid green;
     margin-top: 20px;
     position: relative;
 }
@@ -298,7 +388,6 @@ input:focus{
 }
 .User-Github-URl{
     height: 70px;
-    border: 2px solid red;
     position: relative;
 }
 .User-Github-URl > i {

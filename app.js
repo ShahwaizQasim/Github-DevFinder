@@ -103,18 +103,42 @@ GithubForm.reset(); // is se input khali ho jaega
 
 GithubForm.addEventListener("submit", formController);
 
+
 /* darkMode and Light mode */
 const mainBody = document.querySelector(".main");
-const theme_btn = document.querySelector("#btn2");
+const body = document.querySelector("body");
+const theme_btn = document.querySelector(".btn2");
+const h5Span = document.querySelector("span");
+const myInput = document.querySelector(".myInput");
+const input = document.querySelector(".input1");
+const userBox = document.querySelector(".box");
+const sidebar = document.querySelector(".sidebar");
+const repository = document.querySelector(".parent2");
 let isDarkMode = true;
 
 theme_btn.addEventListener("click", () => {
   if (isDarkMode === true) {
-     mainBody.className = "dark"
+     mainBody.className = "mainDark";
+     h5Span.className = 'spanDark';
      theme_btn.innerHTML = "Light <i class='fa-solid fa-sun'></i>";
+     theme_btn.className = 'btn2Dark';
+     myInput.className = 'myInputDark';
+     userBox.className = "boxDark";
+     input.className = 'input1Dark';
+     sidebar.className = 'sidebarDark';
+     repository.className = 'parent2Dark'
   }else{
      mainBody.className = "main"
+     h5Span.className = 'span'
      theme_btn.innerHTML = "Dark <i class='fa-solid fa-moon'></i>";
+     theme_btn.className = 'btn2'
+     myInput.className = 'myInput';
+     userBox.className = "box";
+     input.className = "input1";
+     sidebar.className = 'sidebar';
+     repository.className = 'parent2'
+
+
   }
   isDarkMode = !isDarkMode;
 })
