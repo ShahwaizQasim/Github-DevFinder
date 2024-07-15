@@ -118,6 +118,15 @@ const sidebar = document.querySelector(".sidebar");
 const repository = document.querySelector(".parent2");
 const githubName = document.querySelector(".githubName2");
 const githubName2 = document.querySelector(".githubName3");
+const parent2 = document.querySelector(".parent2");
+const repo = document.querySelector(".repo1");
+const repo2 = document.querySelector(".repo2");
+const followers = document.querySelector(".followers1");
+const followers2 = document.querySelector(".followers2");
+const following = document.querySelector(".following1");
+const following2 = document.querySelector(".following2");
+const icon = document.querySelector(".icon");
+const location2 = document.querySelector(".location2");
 let isDarkMode = true;
 
 theme_btn.addEventListener("click", () => {
@@ -133,7 +142,17 @@ theme_btn.addEventListener("click", () => {
      repository.className = 'parent2Dark';
      githubName.className = 'githubName2Dark';
      githubName2.className = 'githubName3Dark';
-     GithubJoin.className = 'githubJoin1Dark'
+     GithubJoin.className = 'githubJoin1Dark';
+     UserBio.className = 'userBio1Dark';
+     parent2.className = 'parent2Dark';
+     repo.className = 'repo1Dark';
+     repo2.className = 'repo2Dark';
+     followers.className = 'followers1Dark';
+     followers2.className = 'followers2Dark';
+     following.className = 'following1Dark';
+     following2.className = 'following2Dark';
+     icon.className = 'iconDark';
+     location2.className = 'location2Dark';
   }else{
      mainBody.className = "main"
      h5Span.className = 'span'
@@ -146,7 +165,18 @@ theme_btn.addEventListener("click", () => {
      repository.className = 'parent2';
      githubName.className = 'githubName2';
      githubName2.className = 'githubName3';
-     GithubJoin.className = 'githubJoin1'
+     GithubJoin.className = 'githubJoin1';
+     UserBio.className = 'userBio1';
+     parent2.className = 'parent2';
+     repo.className = 'repo1';
+     repo2.className = 'repo2';
+     followers.className = 'followers1';
+     followers2.className = 'followers2';
+     following.className = 'following1';
+     following2.className = 'following2';
+     icon.className = 'icon';
+     location2.className = 'location2';
+
   }
   isDarkMode = !isDarkMode;
 })

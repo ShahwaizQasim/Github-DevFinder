@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --font-family: "Space Mono", monospace;
 }
 :root{
     --background-color: #F6F8FF;
@@ -232,8 +233,8 @@
     background-color: var(--dark-color2); 
 }
 .user-image{
-    height: 140px;
-    width: 140px;
+    height: 120px;
+    width: 120px;
     border-radius: 100%;
     border: 2px solid var(--color);
     position: relative;
@@ -286,7 +287,6 @@
 .githubJoin{
     height: 100px;
     width: 40%;
-    border: 2px solid red;
 }
 .githubJoin1{
     font-family: var(--font-family);
@@ -305,11 +305,17 @@
 .userBio{
     min-height: 80px;
 }
-#UserBio{
+.userBio1{
     font-family: var(--font-family);
     color: var(--color);
     font-weight: 500;
     padding-right: 25px;
+}
+.userBio1Dark{
+    font-family: var(--font-family);
+    color: var(--background-color);
+    font-weight: 500;
+    padding-right: 35px;
 }
 .parent2{
     height: auto;
@@ -325,7 +331,7 @@
 .parent2Dark{
     height: auto;
     width: 80%;
-    background-color:var(--dark-color2) ;
+    background-color:var(--dark-color) ;
     position: relative;
     top: 10px;
     left: 15px;
@@ -338,16 +344,31 @@
     width: 30%;
     padding-bottom: 20px;
 }
-.Repo > h4{
+.Repo > .repo1{
     font-family: var(--font-family);
     text-align: center;
     padding-top: 20px;
     color: var(--color);
-    font-weight: 600;
+    font-weight: 500 !important;
 }
-#repo{
-    padding-top: 5px !important;
-    color: var(--color);
+.Repo > .repo1Dark{
+    font-family: var(--font-family);
+    text-align: center;
+    padding-top: 20px;
+    color: var(--color3);
+    font-weight: 500;
+}
+.repo2{
+    position: relative;
+    left: 55px;
+    padding-top: 8px !important;
+    font-weight: 500;
+}
+.repo2Dark{
+    position: relative;
+    left: 55px;
+    padding-top: 8px !important;
+    color: var(--color3) !important;
     font-weight: 500;
 }
 .Followers{
@@ -357,52 +378,98 @@
     color: var(--color);
     font-weight: 600;
 }
-.Followers > h4{
+.Followers > .followers1{
     font-family: var(--font-family);
     text-align: center;
     padding-top: 20px;
-    font-weight: 600;
-}
-#followers{
-    padding-top: 5px !important;
-    color: var(--color);
     font-weight: 500;
+}
+.Followers > .followers1Dark{
+    font-family: var(--font-family);
+    text-align: center;
+    padding-top: 20px;
+    color: var(--color3);
+    font-weight: 500;
+}
+.followers2{
+    position: relative;
+    left: 50px;
+    padding-top: 8px !important;
+    font-weight: 500;
+}
+.followers2Dark{
+    position: relative;
+    left: 50px;
+    padding-top: 8px !important;
+    font-weight: 500;
+    color: var(--color3);
 }
 .Following{
     height: auto;
     width: 30%;
     padding-bottom: 20px; 
 }
-.Following > h4{
+.Following > .following1{
     font-family: var(--font-family);
     text-align: center;
     padding-top: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--color);
 }
-#following{
-    padding-top: 5px !important;
+.Following > .following1Dark{
+    font-family: var(--font-family);
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 500;
+    color: var(--color3);
+}
+.following2{
+    position: relative;
+    left: 58px;
+    padding-top: 8px !important;
     color: var(--color);
     font-weight: 500;
+}
+.following2Dark{
+    position: relative;
+    left: 55px;
+    padding-top: 8px !important;
+    font-weight: 500;
+    color: var(--color3);
 }
 .location{
     height: 60px;
     margin-top: 20px;
     position: relative;
 }
-.location > i {
+.location > .icon {
     font-size: 1.4rem;
     color: var(--color);
     position: relative;
     top: 15px;
     left: 10px; 
 }
-.location > h4 {
+.location > .iconDark{
+    font-size: 1.4rem;
+    color: var(--color3);
+    position: relative;
+    top: 15px;
+    left: 10px; 
+}
+.location > .location2 {
     font-family: var(--font-family);
     position: absolute;
     left: 40px;
     top: 13px;
     color: var(--color);
+    font-weight: 500;
+}
+.location > .location2Dark {
+    font-family: var(--font-family);
+    position: absolute;
+    left: 40px;
+    top: 13px;
+    color: var(--color3);
     font-weight: 500;
 }
 .User-Github-URl{
