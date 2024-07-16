@@ -49,9 +49,28 @@
     .myInputDark{
         width: 85%;
     }
+    .input{
+        width: 100%;
+    }
     .parent{
         width: 85%;
         margin-top: 40px;
+    }
+    .githubName{
+        width: 90%;
+    }
+    .githubJoin{
+        display: none;
+    }
+    .userBio1{
+        font-size: 0.9rem;
+        margin-top: 5px;
+        word-spacing: 2px;
+    }
+    .userBio1Dark{
+        font-size: 0.9rem;
+        margin-top: 5px;
+        word-spacing: 2px;
     }
 }
 @media screen and (max-width: 430px) {
@@ -123,6 +142,11 @@
     }
     .following2{
         position: relative;
+        left: 25px;
+        font-size: 0.8rem;
+    }
+    .following2Dark{
+        position: relative;
         left: 35px;
         font-size: 0.8rem;
     }
@@ -159,13 +183,13 @@
         font-size: 1rem;
     }
     .location > .location2 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         position: absolute;
         left: 30px;
         top: 13px;
     }
     .location > .location2Dark {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         position: absolute;
         left: 30px;
         top: 13px;
@@ -174,15 +198,71 @@
         font-size: 1rem;
     }
     .User-Github-URl > .url {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         position: absolute;
         left: 30px;
         top: 13px;
     }
     .User-Github-URl > .urlDark {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         position: absolute;
         left: 30px;
         top: 13px;
+    }
+    .inputButton{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    .box{
+        width: 95%;
+        flex-direction: column;
+    }
+    .boxDark{
+        width: 95%;
+    }
+    .myInput{
+        width: 95%;
+    }
+    .myInputDark{
+        width: 95%;
+    }
+    .parent{
+        width: 95%;
+    }
+    .img > h5{
+        font-size: 1.2rem;
+        padding-top: 15px;
+    }
+    .button > .btn2{
+        height: 30px;
+        font-size: 1rem !important;
+        padding-top: 15px;
+    }
+    .button > .btn2Dark{
+        height: 30px;
+        font-size: 1rem !important;
+        padding-top: 15px;
+    }
+    .input1{
+        font-size: 0.9rem;
+    }
+    .input1Dark{
+        font-size: 0.9rem;
+    }
+    .githubJoin{
+        display: none;
+    }
+    .User-Github-URl > .url {
+        font-size: 0.7rem;
+    }
+    .User-Github-URl > .urlDark {
+        font-size: 0.7rem;
+    }
+    .location > .location2 {
+        font-size: 0.7rem;
+    }
+    .location > .location2Dark {
+        font-size: 0.7rem;
     }
 }

@@ -24,7 +24,6 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    /* border: 2px solid red; */
 }
 
 /* main div  */
@@ -290,6 +289,7 @@
 }
 .userBio{
     min-height: 80px;
+    width: 100%;
 }
 .userBio1{
     font-family: var(--font-family);
@@ -308,7 +308,7 @@
     width: 85%;
     background-color:var(--background-color) ;
     position: relative;
-    top: 10px;
+    top: 0;
     left: 5;
     border-radius:10px;
     display: flex;
@@ -460,6 +460,7 @@
 }
 .User-Github-URl{
     height: 70px;
+    width: 100%;
     position: relative;
 }
 .User-Github-URl > .icon2 {
@@ -483,6 +484,7 @@
     top: 13px;
     color: var(--color);
     font-weight: 500;
+    padding-right: 10px;
 }
 .User-Github-URl > .urlDark {
     font-family: var(--font-family);
@@ -490,5 +492,6 @@
     left: 50px;
     top: 13px;
     color: var(--color3);
+    padding-right: 10px;
     font-weight: 500;
 }
