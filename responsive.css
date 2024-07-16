@@ -1,0 +1,188 @@
+@media screen and (max-width: 1100px) {
+    .box{
+        width: 65%;
+        flex-direction: column;
+    }
+    .boxDark{
+        width: 65%;
+    }
+    .myInput{
+        width: 65%;
+    }
+    .myInputDark{
+        width: 65%;
+    }
+    .parent{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .box{
+        width: 85%;
+        flex-direction: column;
+    }
+    .boxDark{
+        width: 85%;
+    }
+    .myInput{
+        width: 85%;
+    }
+    .myInputDark{
+        width: 85%;
+    }
+    .parent{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 570px) {
+    .box{
+        width: 85%;
+        flex-direction: column;
+    }
+    .boxDark {
+        width: 85%;
+        flex-direction: column;
+    }
+    .myInput{
+        width: 85%;
+    }
+    .myInputDark{
+        width: 85%;
+    }
+    .parent{
+        width: 85%;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .box{
+        width: 85%;
+        flex-direction: column;
+    }
+    .boxDark{
+        width: 85%;
+        flex-direction: column;
+    }
+    .myInput{
+        width: 85%;
+    }
+    .myInputDark{
+        width: 85%;
+    }
+    .parent{
+        width: 85%;
+        margin-top: 40px;
+    }
+    .inputButton > .btn1{
+        display: none;
+    }
+    .inputIcon > i{
+        font-size: 1.2rem;
+    }
+    .input1{
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .Repo > .repo1{
+        font-size: 0.8rem;
+    }
+    .Repo > .repo1Dark{
+        font-size: 0.8rem;
+    }
+    .repo2{
+        position: relative;
+        left: 35px;
+        font-size: 0.8rem;
+    }
+    .repo2Dark{
+        position: relative;
+        left: 35px;
+        font-size: 0.8rem;
+    }
+    .Followers > .followers1{
+        font-size: 0.8rem;
+    }
+    .Followers > .followers1Dark{
+        font-size: 0.8rem;
+    }
+    .followers2{
+        position: relative;
+        left: 30px;
+        font-size: 0.8rem;
+    }
+    .followers2Dark{
+        position: relative;
+        left: 30px;
+        font-size: 0.8rem;
+    }
+    .Following > .following1{
+        font-size: 0.8rem;
+    }
+    .Following > .following1Dark{
+        font-size: 0.8rem;
+    }
+    .following2{
+        position: relative;
+        left: 35px;
+        font-size: 0.8rem;
+    }
+    .githubName > .githubName2{
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    .githubName > .githubName2Dark{
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+    .githubName > .githubName3{
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+    .githubName > .githubName3Dark{
+        font-size: 0.8rem;
+        margin-top: 5px;
+    }
+    .githubJoin{
+        display: none;
+    }
+    .userBio1{
+        font-size: 0.9rem;
+        margin-top: 5px;
+        word-spacing: 2px;
+    }
+    .userBio1Dark{
+        font-size: 0.9rem;
+        margin-top: 5px;
+        word-spacing: 2px;
+    }
+    .icon {
+        font-size: 1rem;
+    }
+    .location > .location2 {
+        font-size: 0.9rem;
+        position: absolute;
+        left: 30px;
+        top: 13px;
+    }
+    .location > .location2Dark {
+        font-size: 0.9rem;
+        position: absolute;
+        left: 30px;
+        top: 13px;
+    }
+    .User-Github-URl > .icon2 {
+        font-size: 1rem;
+    }
+    .User-Github-URl > .url {
+        font-size: 0.9rem;
+        position: absolute;
+        left: 30px;
+        top: 13px;
+    }
+    .User-Github-URl > .urlDark {
+        font-size: 0.9rem;
+        position: absolute;
+        left: 30px;
+        top: 13px;
+    }
+}

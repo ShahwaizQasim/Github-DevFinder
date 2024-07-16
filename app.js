@@ -125,8 +125,10 @@ const followers = document.querySelector(".followers1");
 const followers2 = document.querySelector(".followers2");
 const following = document.querySelector(".following1");
 const following2 = document.querySelector(".following2");
-const icon = document.querySelector(".icon");
+// const LocationIcon = document.querySelector(".icon");
 const location2 = document.querySelector(".location2");
+// const LocationIcon2 = document.querySelector(".icon2");
+const url = document.querySelector(".url");
 let isDarkMode = true;
 
 theme_btn.addEventListener("click", () => {
@@ -151,8 +153,10 @@ theme_btn.addEventListener("click", () => {
      followers2.className = 'followers2Dark';
      following.className = 'following1Dark';
      following2.className = 'following2Dark';
-     icon.className = 'iconDark';
+    //  LocationIcon.className = 'icon1Dark';
      location2.className = 'location2Dark';
+    //  LocationIcon2.className = 'icon2Dark';
+     url.className = 'urlDark';
   }else{
      mainBody.className = "main"
      h5Span.className = 'span'
@@ -174,9 +178,10 @@ theme_btn.addEventListener("click", () => {
      followers2.className = 'followers2';
      following.className = 'following1';
      following2.className = 'following2';
-     icon.className = 'icon';
+    //  LocationIcon.className = 'icon';
      location2.className = 'location2';
-
+    //  LocationIcon2.className = 'icon2';
+     url.className = 'url';
   }
   isDarkMode = !isDarkMode;
 })
