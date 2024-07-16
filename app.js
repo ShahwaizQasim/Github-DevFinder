@@ -134,6 +134,7 @@ let isDarkMode = true;
 theme_btn.addEventListener("click", () => {
   if (isDarkMode === true) {
      mainBody.className = "mainDark";
+     body.className = 'darkBody';
      h5Span.className = 'spanDark';
      theme_btn.innerHTML = "Light <i class='fa-solid fa-sun'></i>";
      theme_btn.className = 'btn2Dark';
@@ -159,6 +160,7 @@ theme_btn.addEventListener("click", () => {
      url.className = 'urlDark';
   }else{
      mainBody.className = "main"
+     body.className = 'lightBody';
      h5Span.className = 'span'
      theme_btn.innerHTML = "Dark <i class='fa-solid fa-moon'></i>";
      theme_btn.className = 'btn2'

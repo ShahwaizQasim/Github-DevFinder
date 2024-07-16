@@ -25,6 +25,14 @@
     flex-direction: column;
     gap: 20px;
 }
+.darkBody{
+    height: 100vh;
+    background-color: var(--dark-color);
+}
+.lightBody{
+    height: 100vh;
+    background-color: var(--background-color)
+}
 
 /* main div  */
 /* light  */
